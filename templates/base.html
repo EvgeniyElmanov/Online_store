@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online_store</title>
+</head>
+<body>
+    <header>
+        <h1>Вся одежда только у нас</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/clothing">Одежда</a></li>
+            <li><a href="/shoes">Обувь</a></li>
+            <li><a href="/jacket">Куртки</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        {% if show_contact %}
+        <p>Контактная информация:</p>
+        <ul>
+            <li>Телефон: +7 (XXX) XXX-XX-XX</li>
+            <li>Email: online_store@example.com</li>
+        </ul>
+        {% endif %}
+        <p>Подвал сайта &copy; 2024</p>
+    </footer>
+</body>
+</html>
